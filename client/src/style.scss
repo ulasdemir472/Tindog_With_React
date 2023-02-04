@@ -1,0 +1,122 @@
+.formContainer {
+  background-color: #ff4c68;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .reg-img {
+    width: 50%;
+    height: 100%;
+  }
+  .formWrapper {
+    background-color: white;
+    padding: 20px 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    .logo {
+      color: #ef8172;
+      font-weight: bold;
+      font-size: 24px;
+    }
+    .title {
+      color: #ef8172;
+      font-size: 12px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      input {
+        padding: 10px;
+        border: none;
+        width: 250px;
+        border-bottom: 1px solid #ff4c68;
+        &::placeholder {
+          color: rgb(175, 175, 175);
+        }
+      }
+      input[type="radio"] {
+        display: none;
+      }
+      input[type="radio"]:checked + label {
+        border: solid 2px rgb(221, 22, 138);
+      }
+      input[type="file"] {
+        margin: 5px;
+        border: none;
+      }
+      select {
+        padding: 10px;
+        border: none;
+        width: 250px;
+        border-bottom: 1px solid #ff4c68;
+      }
+      button {
+        background-color: #ef8172;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+      }
+    }
+    p {
+      color: #ef8172;
+      font-size: 12px;
+    }
+    .multiple-input-container {
+      display: flex;
+      flex-direction: row;
+      margin: 10px 0;
+      input {
+        margin-right: 5px;
+      }
+      label {
+        padding: 10px;
+        border: solid 2px rgb(144, 144, 144);
+        border-radius: 10px;
+        transition: all 0.3s;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.login {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("./images/massage-g4d96952eb_1920.webp");
+  background-size: cover;
+}
+.register {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("./images/cute-little-dog-impersonating-business-person.webp");
+  background-size: cover;
+  background-position: center;
+}
+.registerDog {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("./images/child-dog-nature-5334516.webp");
+  background-size: cover;
+  background-position: center;
+  .dogWrapper {
+    position: relative;
+    right: -25%;
+  }
+}

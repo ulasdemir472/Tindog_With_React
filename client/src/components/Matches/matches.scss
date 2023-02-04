@@ -1,0 +1,37 @@
+.match-container {
+  display: flex;
+  background-color: #ff4c68;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  height: 90vh;
+  text-align: left;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  .match-section {
+    background-color: rgb(255, 255, 255);
+    width: 35%;
+
+    .match-container-header {
+      background-color: #f6b1bb;
+      height: 100px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .matches {
+      display: flex;
+      border: none;
+      background-color: rgb(255, 255, 255);
+      border-bottom: solid 4px rgb(243, 33, 33);
+      font-size: 20px;
+      margin: 10px;
+      padding: 10px;
+    }
+    .matches-display {
+      padding: 20px;
+      height: 60vh;
+      overflow-y: auto;
+    }
+  }
+}

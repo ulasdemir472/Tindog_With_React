@@ -1,0 +1,97 @@
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+  background-color: #ff4c68;
+  position: relative;
+  overflow: hidden;
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    width: 90vw;
+    max-width: 280px;
+    position: relative;
+    .cardsItem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .swipe {
+      position: absolute;
+      cursor: pointer;
+    }
+    .info {
+      position: absolute;
+      color: black;
+      font-size: bold;
+      z-index: 1;
+      right: 20px;
+      top: -140px;
+      height: 40px;
+      width: 40px;
+      border-radius: 100%;
+    }
+    .info:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .card {
+      width: 50rem;
+      height: 55vh;
+      position: relative;
+      background-color: #fff;
+      box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.034);
+      border-radius: 20px;
+      background-size: cover;
+      background-position: center;
+      margin-top: -160px;
+      h1 {
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        margin: 10px;
+        color: #fff;
+      }
+    }
+    .showInfo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      position: absolute;
+      top: -50px;
+      left: -10px;
+    }
+  }
+  .buttons {
+    position: absolute;
+    bottom: 80px;
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    .swipe-button {
+      background-color: #fff;
+      border: none;
+      border-radius: 70%;
+      padding: 5px;
+      font-size: 31px;
+      height: 100px;
+      width: 100px;
+      box-shadow: 0 2px 4px darkslategray;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .swipe-button:active {
+      background-color: #48abe0;
+      box-shadow: 0 0 2px darkslategray;
+      transform: translateY(2px);
+    }
+    .swipe-button:hover {
+      background-color: #fff;
+    }
+  }
+}

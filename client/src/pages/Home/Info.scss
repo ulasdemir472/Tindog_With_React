@@ -1,0 +1,36 @@
+.card-body {
+  display: flex;
+  position: absolute;
+  color: #fff;
+  height: 45vh;
+  width: 50rem;
+  flex-direction: column;
+  background-color: #f6b1bb;
+  color: black;
+  border-radius: 2%;
+  border: 1px solid black;
+
+  .img {
+    height: 800px;
+    width: 800px;
+    border-radius: 100%;
+    margin: 10px;
+    position: relative;
+    top: -60px;
+    left: -280px;
+  }
+  .close {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin: 10px;
+    padding: 5px;
+    right: 10px;
+  }
+  .card-text {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+  }
+}
